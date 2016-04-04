@@ -1,9 +1,11 @@
-<p>Index Page</p>
-<p>You are signed in as : <%=current_user.email%></p>
-<% @all_user.each do |user|%>
+<h3>Index Page</h3>
+<h4>You are signed in as : <%=current_user.email%></h4>
+  
+
+  <% @all_user.each do |user|%>
 <table>
-<tr>
-<%=user.email%>
-</tr>
-<%end%> 
+  <tr>
+   <em><%=user.email%><em>
+  </tr>
+  <%end%> 
 </table>
